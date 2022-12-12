@@ -8,13 +8,19 @@ public class Pat_01 {
 		while (row <= n) {
 			int cnt_st = 0;
 			while (cnt_st < n) {
-				System.out.print("* ");
+//				if (row == 1 && row ==n) {
+				if (row == 1 || row == n || 
+						cnt_st == 0||cnt_st==n-1) {
+
+					System.out.print("* ");
+				} else {
+					System.out.print("  ");
+				}
 				cnt_st++;
 			}
 			row++;
 			System.out.println();
-			
+
 		}
-		System.out.print("asdsad");
 	}
 }
